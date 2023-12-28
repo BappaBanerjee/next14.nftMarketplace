@@ -11,10 +11,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <main className="container">
-          <Nav />
-          {children}
-        </main>
+        <Nav />
+        <main className="container">{children}</main>
       </body>
     </html>
   );

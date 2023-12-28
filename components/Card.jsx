@@ -6,7 +6,7 @@ const Card = ({ image, id }) => {
   return (
     <div
       key={id}
-      className="card flex flex-col max-w-sm bg-grey border border-gray-200 rounded-lg shadow dark:bg-dark-grey dark:border-gray-700"
+      className="card z-50 hover:scale-105 duration-700 flex flex-col max-w-sm bg-grey border border-gray-200 rounded-lg shadow dark:bg-dark-grey dark:border-gray-700"
     >
       <div className="overflow-hidden card_image min-h-60">
         <Image
@@ -15,7 +15,7 @@ const Card = ({ image, id }) => {
           key={id}
           width={400}
           height={400}
-          className="rounded-t-lg hover:scale-110 duration-700 h-full object-cover object-center"
+          className="rounded-t-lg h-full object-cover object-center"
         />
       </div>
 

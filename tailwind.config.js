@@ -26,6 +26,7 @@ module.exports = {
         "background-color-2": "#13131d",
         "background-color-3": "#151521",
         "background-color-4": "#242435",
+        "background-color-5": "#2424388c",
       },
     },
   },
