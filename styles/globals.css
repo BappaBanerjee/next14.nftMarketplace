@@ -12,7 +12,7 @@ html {
   @apply bg-black;
 } */
 .container {
-  @apply flex-col max-w-7xl mx-auto sm:px-16 px-6;
+  @apply flex-col max-w-full mx-auto sm:px-16 px-6;
 }
 
 /* Nav Component */
@@ -46,4 +46,9 @@ html {
 
 .gray_btn {
   @apply bg-transparent px-4 py-1 border-solid border-2 border-gray-700 rounded-lg mx-4;
+}
+
+/* slick slider */
+.slick-slide {
+  padding: 0 40px;
 }
