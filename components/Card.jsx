@@ -2,16 +2,23 @@
 
 import Image from "next/image";
 
-const Card = () => {
+const Card = ({ image, id }) => {
   return (
-    <div className="max-w-sm bg-grey border border-gray-200 rounded-lg shadow dark:bg-dark-grey dark:border-gray-700">
-      <Image
-        src="/assets/images/grid.jpg"
-        alt="nft_image"
-        width={400}
-        height={400}
-        className="rounded-t-lg"
-      />
+    <div
+      key={id}
+      className="card flex flex-col max-w-sm bg-grey border border-gray-200 rounded-lg shadow dark:bg-dark-grey dark:border-gray-700"
+    >
+      <div className="overflow-hidden card_image min-h-60">
+        <Image
+          src={image}
+          alt="nft_image"
+          key={id}
+          width={400}
+          height={400}
+          className="rounded-t-lg hover:scale-110 duration-700 h-full object-cover object-center"
+        />
+      </div>
+
       <div className="p-5">
         <h5 className="mb-2 text-2xl font-bold tracking-tight text-primary-yellow-green">
           NFT Name
@@ -19,7 +26,7 @@ const Card = () => {
         <p className="mb-3 font-normal text-primary-yellow-green">120 Eth</p>
         <a
           href="#"
-          className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-primary-yellow-green rounded-lg hover:bg-secondary-yellow-green focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-primary-yellow-green dark:hover:secondary-yellow-green dark:focus:ring-blue-800"
+          className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-background-color-4 rounded-lg hover:background-color-3 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-primary-yellow-green dark:hover:secondary-yellow-green dark:focus:ring-blue-800"
         >
           Buy Now
           <svg
