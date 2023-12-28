@@ -61,7 +61,16 @@ html {
   height: 25rem;
 }
 
-.card:hover {
+.collectioncard {
+  height: 25rem;
+}
+
+/* .card:hover {
   box-shadow: rgba(255, 172, 28, 0.199) -10px 10px,
     rgba(255, 172, 28, 0.19) -15px 15px;
+} */
+
+.card:hover {
+  box-shadow: rgba(3, 152, 237, 0.199) -10px 10px,
+    rgba(3, 152, 237, 0.19) -15px 15px;
 }

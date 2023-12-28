@@ -6,7 +6,7 @@ const Card = ({ image, id }) => {
   return (
     <div
       key={id}
-      className="card z-50 hover:scale-105 duration-700 flex flex-col max-w-sm bg-grey border border-gray-200 rounded-lg shadow dark:bg-dark-grey dark:border-gray-700"
+      className="card z-20 hover:scale-105 duration-700 flex flex-col max-w-sm bg-grey border border-gray-200 rounded-lg shadow dark:bg-dark-grey dark:border-gray-700"
     >
       <div className="overflow-hidden card_image min-h-60">
         <Image
