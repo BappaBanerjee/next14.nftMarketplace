@@ -29,13 +29,13 @@ let key = 1;
 
 const ImageSlider = () => {
   return (
-    <>
+    <div className="py-20">
       <Slider {...settings}>
         {nfts.map((index) => (
           <Imagecard image={index} key={key++} />
         ))}
       </Slider>
-    </>
+    </div>
   );
 };
 

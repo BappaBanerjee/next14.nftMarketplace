@@ -10,7 +10,7 @@ const Nav = () => {
 
   const isloggedIn = true;
   return (
-    <nav className="bg-background-color-5  backdrop-blur-md flex-between w-full mb-16 sticky top-0 z-50 px-10 py-4">
+    <nav className="bg-background-color-5  backdrop-blur-md flex-between w-full sticky top-0 z-50 px-10 py-4">
       <div className="flex-center">
         <Link
           href="/"

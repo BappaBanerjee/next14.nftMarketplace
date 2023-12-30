@@ -2,17 +2,13 @@
 
 import Image from "next/image";
 
-const Collectioncard = ({ image, id }) => {
+const Collectioncard = ({ image }) => {
   return (
-    <div
-      key={id}
-      className="collectioncard z-20 flex flex-col max-w-sm bg-grey border border-gray-200 rounded-lg shadow dark:bg-dark-grey dark:border-gray-700"
-    >
+    <div className="collectioncard z-20 flex flex-col max-w-sm bg-grey border border-gray-200 rounded-lg shadow dark:bg-dark-grey dark:border-gray-700">
       <div className="overflow-hidden card_image min-h-60">
         <Image
           src={image}
           alt="nft_image"
-          key={id}
           width={400}
           height={400}
           className="rounded-t-lg h-full object-cover object-center hover:scale-105 duration-700"
