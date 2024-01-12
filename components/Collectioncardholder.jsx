@@ -1,15 +1,6 @@
 import React from "react";
 import Collectioncard from "./Collectioncard";
-
-const nfts = [
-  { id: 1, url: "/assets/images/nft1.jpg" },
-  { id: 2, url: "/assets/images/bg.jpg" },
-  { id: 3, url: "/assets/images/nft3.jpg" },
-  { id: 4, url: "/assets/images/nft4.jpg" },
-  { id: 5, url: "/assets/images/nft5.jpg" },
-  { id: 6, url: "/assets/images/nft7.jpg" },
-  { id: 7, url: "/assets/images/nft8.jpg" },
-];
+import { nfts } from "@/data/test/nfts";
 
 const Collectioncardholder = ({ heading }) => {
   return (

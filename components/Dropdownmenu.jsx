@@ -30,16 +30,18 @@ export default function Dropdownmenu() {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+        <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right divide-y divide-gray-600 rounded-md bg-background-color-6 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
           {/* {menuItems.map((value, index) => ( */}
           {Object.keys(dropdownMenuItems).map((value, index) => (
             <div className="py-1" key={index}>
               <Menu.Item>
                 {({ active }) => (
                   <a
-                    href="#"
+                    href={dropdownMenuItems[value]}
                     className={classNames(
-                      active ? "bg-gray-100 text-gray-900" : "text-gray-700",
+                      active
+                        ? "bg-background-color-7 text-white"
+                        : "text-white",
                       "block px-4 py-2 text-sm"
                     )}
                   >

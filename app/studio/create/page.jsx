@@ -13,7 +13,7 @@ const Create = () => {
   };
 
   return (
-    <div className="w-full grid grid-cols-3">
+    <div className="w-full grid md:grid-cols-3">
       <div className="left_side">
         <div className="px-4 py-8 lg:py-16">
           <div>Upload your picture</div>
@@ -172,7 +172,7 @@ const Create = () => {
               </div>
               <button
                 type="submit"
-                className="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white bg-primary-700 rounded-lg focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-primary-800"
+                className="btn_primary inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-primary-800"
               >
                 Add product
               </button>

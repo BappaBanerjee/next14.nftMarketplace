@@ -5,6 +5,7 @@ import Imagecard from "@/components/Imagecard";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { nfts } from "@/data/test/nfts";
 
 let settings = {
   dots: false,
@@ -12,27 +13,40 @@ let settings = {
   speed: 1000,
   slidesToShow: 4,
   slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        initialSlide: 2,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
 };
-
-const nfts = [
-  "/assets/images/nft1.jpg",
-  "/assets/images/nft2.jpg",
-  "/assets/images/nft3.jpg",
-  "/assets/images/nft4.jpg",
-  "/assets/images/nft5.jpg",
-  "/assets/images/nft6.jpg",
-  "/assets/images/nft7.jpg",
-  "/assets/images/nft8.jpg",
-];
-
-let key = 1;
 
 const ImageSlider = () => {
   return (
     <div className="py-20">
       <Slider {...settings}>
-        {nfts.map((index) => (
-          <Imagecard image={index} key={key++} />
+        {nfts.map((nft) => (
+          <Imagecard image={nft.url} key={nft.id} />
         ))}
       </Slider>
     </div>
