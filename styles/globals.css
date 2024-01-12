@@ -89,3 +89,21 @@ html {
   margin-left: -4rem;
   background-size: cover;
 }
+
+.dropdown:hover #dropdownhover {
+  display: block;
+}
+
+.full_width {
+  margin-left: -4rem;
+  margin-right: -4rem;
+}
+
+.tab_active {
+  border-bottom: 1px solid #fff;
+  color: #fff !important;
+}
+
+.tablinks {
+  @apply text-slate-400 py-5 text-xl;
+}
